@@ -1,45 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Banana Bliss Oversized T-shirt</title>
-  <link rel="stylesheet" href="Styles\style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="product-container">
-    <div class="product-image">
-      <img src="https://via.placeholder.com/400x400.png?text=Banana+Bliss+T-Shirt" alt="Banana Bliss T-shirt">
-    </div>
-    <div class="product-details">
-      <h1>Banana Bliss Oversized T-shirt</h1>
-      <button id="sizeChartBtn">Size Chart</button>
-
-      <!-- Modal -->
-      <div id="sizeChartModal" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <img src="https://via.placeholder.com/600x400.png?text=Size+Chart" alt="Size Chart">
+    <!-- Brand Name and Quote Section -->
+    <div class="brand-section">
+        <div class="brand-name">
+            <span>Banana Bliss</span> <!-- Brand name -->
         </div>
-      </div>
-
-      <p class="description">Experience ultimate comfort and vibrant style with our Banana Bliss Oversized T-shirt.</p>
-      <button class="buy-button">Add to Cart</button>
+        <p class="brand-quote">"Comfort meets style in every thread."</p> <!-- Brand quote -->
     </div>
-  </div>
 
-  <h2 class="section-title">More Products</h2>
-  <div class="horizontal-scroll">
-    <img src="https://via.placeholder.com/150" alt="Product 1">
-    <img src="https://via.placeholder.com/150" alt="Product 2">
-    <img src="https://via.placeholder.com/150" alt="Product 3">
-    <img src="https://via.placeholder.com/150" alt="Product 4">
-    <img src="https://via.placeholder.com/150" alt="Product 5">
-    <img src="https://via.placeholder.com/150" alt="Product 6">
-    <img src="https://via.placeholder.com/150" alt="Product 7">
-    <img src="https://via.placeholder.com/150" alt="Product 8">
-  </div>
+    <!-- Product Listing Section -->
+    <div class="product-listing">
+        <h1 class="product-name">Banana Bliss Oversized T-shirt</h1>
+        
+        <div class="product-image">
+            <img src="images/ban-1.jpg" alt="Product Image">
+        </div>
 
-  <script src="script.js"></script>
+        <div class="product-description">
+            <p>Comfortable and stylish oversized t-shirt made from premium cotton.</p>
+        </div>
+
+        <div class="product-price">
+            <span>$25.99</span>
+        </div>
+
+        <div class="product-actions">
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="buy-now">Buy Now</button>
+
+            <!-- View Size Chart button on the same line -->
+            <button id="sizeChartBtn">View Size Chart</button>
+        </div>
+    </div>
+
+    <div id="sizeChartPopup" class="popup">
+        <span class="close">&times;</span>
+        <img src="images/size chart.png" alt="Size Chart">
+    </div>
+
+    <div class="related-products">
+        <h2>Related Products</h2>
+        <div class="product-scroll">
+            <div class="product-item"><img src="images/brown o-tS (1).jpg" alt="Product 1"></div>
+            <div class="product-item"><img src="images/black o-sized.jpg" alt="Product 2"></div>
+            <div class="product-item"><img src="images/brown o-tS (7).jpg" alt="Product 3"></div>
+            <div class="product-item"><img src="images/green o-tS.jpg" alt="Product 4"></div>
+            <div class="product-item"><img src="images/tshrit-2.jpg" alt="Product 5"></div>
+            <div class="product-item"><img src="images/hoodie-3.jpg" alt="Product 6"></div>
+            <div class="product-item"><img src="images/brown o-tS (6).jpg" alt="Product 7"></div>
+            <div class="product-item"><img src="images/shirt-1.jpg" alt="Product 8"></div>
+        </div>
+    </div>
 </body>
+
+<script src="index.js"></script>
 </html>

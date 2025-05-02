@@ -1,19 +1,29 @@
-// script.js
+// Handle the Size Chart Popup
+const sizeChartBtn = document.getElementById("sizeChartBtn"); // The "View Size Chart" button
+const sizeChartPopup = document.getElementById("sizeChartPopup"); // The popup container
+const closeBtn = document.getElementsByClassName("close")[0]; // Close button for the popup
 
-const modal = document.getElementById('sizeChartModal');
-const btn = document.getElementById('sizeChartBtn');
-const closeBtn = document.querySelector('.close');
+// When the "View Size Chart" button is clicked, open the pop-up
+sizeChartBtn.onclick = function() {
+    sizeChartPopup.style.display = "flex"; // Display the pop-up with a flexbox layout
+};
 
-btn.onclick = function () {
-  modal.style.display = 'block';
-}
+// When the close button (X) is clicked, close the pop-up
+closeBtn.onclick = function() {
+    sizeChartPopup.style.display = "none"; // Hide the pop-up
+};
 
-closeBtn.onclick = function () {
-  modal.style.display = 'none';
-}
+// Close the pop-up if the user clicks outside the popup area
+window.onclick = function(event) {
+    if (event.target === sizeChartPopup) {
+        sizeChartPopup.style.display = "none"; // Hide the pop-up if the background is clicked
+    }
+};
 
-window.onclick = function (event) {
-  if (event.target === modal) {
-    modal.style.display = 'none';
-  }
-}
+// Optional: Add smooth scrolling for the related products section
+const productScroll = document.querySelector('.product-scroll');
+productScroll.addEventListener('wheel', function(e) {
+    if (e.deltaY !== 0) {
+        productScroll.scrollLeft += e.deltaY; // Scroll horizontally when mouse wheel is used
+    }
+});
