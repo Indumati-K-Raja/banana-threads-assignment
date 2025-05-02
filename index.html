@@ -1,65 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Page</title>
-    <link rel="stylesheet" href="Styles/style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Banana Bliss Oversized T-Shirt</title>
+  <link rel="stylesheet" href="Styles\style.css" />
 </head>
 <body>
-    <!-- Brand Name and Quote Section -->
-    <div class="brand-section">
-        <div class="brand-name">
-            <span>Banana Bliss</span> <!-- Brand name -->
-        </div>
-        <p class="brand-quote">"Comfort meets style in every thread."</p> <!-- Brand quote -->
+
+  <!-- Header -->
+  <header class="header">
+    <div class="brand-container">
+      <img src="https://img.icons8.com/emoji/48/banana-emoji.png" alt="Banana Logo" class="logo" />
+      <h1 class="brand-title">Banana Bliss</h1>
+    </div>
+    <p class="tagline">Oversized Comfort. Unmatched Style.</p>
+  </header>
+  
+  
+
+
+  <!-- Custom Banner Title Image -->
+<div class="custom-banner">
+    <img src="images/banner.png" alt="Embrace Your Personal Style Banner">
+  </div>
+  
+  </div>
+
+  <!-- Main Product Section -->
+  <section class="product-section container">
+    <div class="product-image">
+      <img src="images\peech.jpg" alt="Banana Bliss T-shirt" />
     </div>
 
-    <!-- Product Listing Section -->
-    <div class="product-listing">
-        <h1 class="product-name">Banana Bliss Oversized T-shirt</h1>
-        
-        <div class="product-image">
-            <img src="images/ban-1.jpg" alt="Product Image">
-        </div>
+    <div class="product-info">
+      <h2>Banana Bliss Oversized T-Shirt</h2>
+      <button id="sizeChartBtn" class="btn size-btn"> View Size Chart</button>
 
-        <div class="product-description">
-            <p>Comfortable and stylish oversized t-shirt made from premium cotton.</p>
+      <!-- Size Chart Modal -->
+      <div id="sizeChartModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <img src="images\size chart.png" alt="Size Chart">
         </div>
+      </div>
 
-        <div class="product-price">
-            <span>$25.99</span>
-        </div>
-
-        <div class="product-actions">
-            <button class="add-to-cart">Add to Cart</button>
-            <button class="buy-now">Buy Now</button>
-
-            <!-- View Size Chart button on the same line -->
-            <button id="sizeChartBtn">View Size Chart</button>
-        </div>
+      <p class="description">
+        Experience ultimate comfort and vibrant style with our Banana Bliss Oversized T-shirt, designed for bold personalities and effortless fashion.
+      </p>
+      <button class="btn add-cart">🛒 Add to Cart</button>
     </div>
+  </section>
 
-    <div id="sizeChartPopup" class="popup">
-        <span class="close">&times;</span>
-        <img src="images/size chart.png" alt="Size Chart">
+  <!-- Scrollable Product Section -->
+  <section class="scroll-section">
+    <h3 class="scroll-title"> Related Products</h3>
+    <div class="scroll-container">
+      <img src="images\beige (2).jpg" alt="Product 1" />
+      <img src="images\beige (1).jpg" alt="Product 2" />
+      <img src="images\im-4.webp" alt="Product 3" />
+      <img src="images\im-5.webp" alt="Product 4" />
+      <img src="images\img-6.jpg" alt="Product 5" />
+      <img src="images\brown o-tS (1).jpg" alt="Product 6" />
+      <img src="images\beige (3).jpg" alt="Product 7" />
+      <img src="images\Letitgogreen_1.webp" alt="Product 8" />
     </div>
+  </section>
 
-    <div class="related-products">
-        <h2>Related Products</h2>
-        <div class="product-scroll">
-            <div class="product-item"><img src="images/brown o-tS (1).jpg" alt="Product 1"></div>
-            <div class="product-item"><img src="images/black o-sized.jpg" alt="Product 2"></div>
-            <div class="product-item"><img src="images/brown o-tS (7).jpg" alt="Product 3"></div>
-            <div class="product-item"><img src="images/green o-tS.jpg" alt="Product 4"></div>
-            <div class="product-item"><img src="images/tshrit-2.jpg" alt="Product 5"></div>
-            <div class="product-item"><img src="images/hoodie-3.jpg" alt="Product 6"></div>
-            <div class="product-item"><img src="images/brown o-tS (6).jpg" alt="Product 7"></div>
-            <div class="product-item"><img src="images/shirt-1.jpg" alt="Product 8"></div>
-        </div>
-    </div>
+  <!-- Banner Quote Section -->
+
+  
+
+  <script src="index.js"></script>
 </body>
-
-<script src="index.js"></script>
 </html>
